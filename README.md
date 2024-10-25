@@ -1,2 +1,3 @@
-# physical-activity-recommender
-Implementation of a Knowledge Base using Drools and Java for course "Elements of AI"
+# garbage-guru-recommender-api
+Implementation of a Knowledge Base using Drools and Java for course "Applied AI"
+

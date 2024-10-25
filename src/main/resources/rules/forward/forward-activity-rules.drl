@@ -1,0 +1,206 @@
+package rules;
+
+import model.material.Material;
+import model.material.TipoMaterial;
+import model.recommendation.Recomendacion;
+import model.recycling.Procedimiento;
+
+rule "Asignar tipo - Papel"
+    when
+        $material: Material(nombre == "papel", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.PAPEL),
+            setRecomendacion(new Recomendacion(Procedimiento.PAPEL))
+        }
+end
+
+rule "Asignar tipo - Cartón"
+    when
+        $material: Material(nombre == "carton", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.CARTON),
+            setRecomendacion(new Recomendacion(Procedimiento.CARTON))
+        }
+end
+
+rule "Asignar tipo - Plástico"
+    when
+        $material: Material(nombre == "plastico", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.PLASTICO),
+            setRecomendacion(new Recomendacion(Procedimiento.PLASTICO))
+        }
+end
+
+rule "Asignar tipo - Vidrio"
+    when
+        $material: Material(nombre == "vidrio", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.VIDRIO),
+            setRecomendacion(new Recomendacion(Procedimiento.VIDRIO))
+        }
+end
+
+rule "Asignar tipo - Aluminio"
+    when
+        $material: Material(nombre == "aluminio", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.ALUMINIO),
+            setRecomendacion(new Recomendacion(Procedimiento.ALUMINIO))
+        }
+end
+
+rule "Asignar tipo - Orgánico"
+    when
+        $material: Material(nombre == "organico", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.ORGANICO),
+            setRecomendacion(new Recomendacion(Procedimiento.ORGANICO))
+        }
+end
+
+rule "Asignar tipo - Electrónico"
+    when
+        $material: Material(nombre == "electronico", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.ELECTRONICO),
+            setRecomendacion(new Recomendacion(Procedimiento.ELECTRONICO))
+        }
+end
+
+rule "Asignar tipo - Ropa"
+    when
+        $material: Material(nombre == "ropa", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.ROPA),
+            setRecomendacion(new Recomendacion(Procedimiento.ROPA))
+        }
+end
+
+rule "Asignar tipo - Neumáticos"
+    when
+        $material: Material(nombre == "neumatico", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.NEUMATICOS),
+            setRecomendacion(new Recomendacion(Procedimiento.NEUMATICOS))
+        }
+end
+
+rule "Asignar tipo - Madera"
+    when
+        $material: Material(nombre == "madera", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.MADERA),
+            setRecomendacion(new Recomendacion(Procedimiento.MADERA))
+        }
+end
+
+rule "Asignar tipo - Metal"
+    when
+        $material: Material(nombre == "metal", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.METAL),
+            setRecomendacion(new Recomendacion(Procedimiento.METAL))
+        }
+end
+
+rule "Asignar tipo - Baterías"
+    when
+        $material: Material(nombre == "bateria", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.BATERIAS),
+            setRecomendacion(new Recomendacion(Procedimiento.BATERIAS))
+        }
+end
+
+rule "Asignar tipo - Cartuchos de toner"
+    when
+        $material: Material(nombre == "cartucho toner", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.CARTUCHOS_TONER),
+            setRecomendacion(new Recomendacion(Procedimiento.CARTUCHOS_TONER))
+        }
+end
+
+rule "Asignar tipo - Pilas"
+    when
+        $material: Material(nombre == "pila", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.PILAS),
+            setRecomendacion(new Recomendacion(Procedimiento.PILAS))
+        }
+end
+
+rule "Asignar tipo - Lamparas fluorescentes"
+    when
+        $material: Material(nombre == "lampara fluorescente", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.LAMPARAS_FLUORESCENTES),
+            setRecomendacion(new Recomendacion(Procedimiento.LAMPARAS_FLUORESCENTES))
+        }
+end
+
+rule "Asignar tipo - Cajas de comida de poliestireno"
+    when
+        $material: Material(nombre == "caja_comida_poliestireno", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.CAJAS_COMIDA_POLIESTIRENO),
+            setRecomendacion(new Recomendacion(Procedimiento.CAJAS_COMIDA_POLIESTIRENO))
+        }
+end
+
+rule "Asignar tipo - Papel aluminio"
+    when
+        $material: Material(nombre == "papel_aluminio", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.PAPEL_ALUMINIO),
+            setRecomendacion(new Recomendacion(Procedimiento.PAPEL_ALUMINIO))
+        }
+end
+
+rule "Asignar tipo - Botellas PET"
+    when
+        $material: Material(nombre == "botella_pet", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.BOTELLAS_PET),
+            setRecomendacion(new Recomendacion(Procedimiento.BOTELLAS_PET))
+        }
+end
+
+rule "Asignar tipo - Sistemas de café"
+    when
+        $material: Material(nombre == "sistemas_cafe", tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.SISTEMAS_CAFE),
+            setRecomendacion(new Recomendacion(Procedimiento.SISTEMAS_CAFE))
+        }
+end
+
+rule "Asignar tipo - No determinado"
+    when
+        $material: Material(tipoNoAsignado())
+    then
+        modify($material) {
+            setTipo(TipoMaterial.NO_DETERMINADO),
+            setRecomendacion(new Recomendacion(Procedimiento.NO_DETERMINADO))
+        }
+end

@@ -1,0 +1,26 @@
+package model.material;
+
+public enum TipoMaterial {
+    PAPEL,
+    CARTON,
+    PLASTICO,
+    VIDRIO,
+    ALUMINIO,
+    ORGANICO,
+    ELECTRONICO,
+    ROPA,
+    NEUMATICOS,
+    MADERA,
+    METAL,
+    BATERIAS,
+    CARTUCHOS_TONER,
+    PILAS,
+    LAMPARAS_FLUORESCENTES,
+    CAJAS_COMIDA_POLIESTIRENO,
+    PAPEL_ALUMINIO,
+    BOTELLAS_PET,
+    SISTEMAS_CAFE,
+    NO_DETERMINADO;
+}
+
+
