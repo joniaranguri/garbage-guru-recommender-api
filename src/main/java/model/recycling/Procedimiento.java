@@ -1,26 +1,26 @@
 package model.recycling;
 
 public enum Procedimiento {
-    PAPEL("Reutiliza las hojas de papel usadas por ambos lados para tomar notas o imprimir documentos. Cuando ya no las necesites, deposítalas en el contenedor de reciclaje de papel."),
-    CARTON("Asegúrate de aplastar las cajas de cartón para ahorrar espacio en el contenedor de reciclaje. No olvides retirar cualquier material no reciclable como cinta adhesiva o etiquetas de plástico."),
-    PLASTICO("Lava y seca los recipientes de plástico antes de reciclarlos. Verifica el número de reciclaje en la parte inferior del recipiente para asegurarte de que puede ser reciclado en tu área."),
-    VIDRIO("Lava y seca las botellas y frascos de vidrio. Recuerda que no todos los productos de vidrio se pueden reciclar, como las bombillas, cristales de ventanas o espejos."),
-    ALUMINIO("Las latas de aluminio son 100% reciclables. Asegúrate de aplastarlas para ahorrar espacio en el contenedor de reciclaje."),
-    ORGANICO("Agrupa los residuos orgánicos como restos de comida, cáscaras de frutas y verduras, y residuos de jardín en un contenedor de compostaje."),
-    ELECTRONICO("Los dispositivos electrónicos deben ser llevados a un centro de reciclaje especializado. Asegúrate de borrar tus datos personales."),
-    ROPA("La ropa que ya no utilizas puede ser donada o llevada a un centro de reciclaje textil."),
-    NEUMATICOS("Los neumáticos deben ser reciclados en centros específicos. Pregunta a tu proveedor de neumáticos sobre programas de reciclaje."),
-    MADERA("Los productos de madera no tratada pueden ser reciclados. Evita incluir madera tratada."),
-    METAL("Los metales como el cobre y el acero son reciclables. Limpia bien cualquier residuo antes de llevarlos a reciclaje."),
-    BATERIAS("Las baterías deben ser llevadas a centros de reciclaje específicos, ya que contienen metales pesados."),
-    CARTUCHOS_TONER("Devuelve los cartuchos de tóner y tinta a puntos de recogida específicos para su reciclaje."),
-    PILAS("Las pilas desechables deben ser recicladas en centros de recogida designados."),
-    LAMPARAS_FLUORESCENTES("Las lámparas fluorescentes contienen mercurio y deben ser llevadas a un centro de reciclaje que acepte desechos peligrosos."),
-    CAJAS_COMIDA_POLIESTIRENO("Consulta a tu centro de reciclaje local sobre la reciclabilidad de las cajas de comida para llevar."),
-    PAPEL_ALUMINIO("El papel aluminio es reciclable si está limpio y seco."),
-    BOTELLAS_PET("Las botellas de plástico PET son reciclables. Lávalas y quita las tapas antes de reciclar."),
-    SISTEMAS_CAFE("Consulta si el fabricante tiene un programa de reciclaje específico para cápsulas de café."),
-    NO_DETERMINADO("Necesita ser agrupado junto con los demás materiales que no tienen una recomendación.");
+    PAPEL("Reuse used paper sheets on both sides for taking notes or printing documents. When you no longer need them, dispose of them in the paper recycling bin."),
+    CARTON("Make sure to crush cardboard boxes to save space in the recycling bin. Don't forget to remove any non-recyclable materials like adhesive tape or plastic labels."),
+    PLASTICO("Wash and dry plastic containers before recycling them. Check the recycling number at the bottom of the container to ensure it can be recycled in your area."),
+    VIDRIO("Wash and dry glass bottles and jars. Remember that not all glass products can be recycled, such as light bulbs, window glass, or mirrors."),
+    ALUMINIO("Aluminum cans are 100% recyclable. Be sure to crush them to save space in the recycling bin."),
+    ORGANICO("Group organic waste such as food scraps, fruit and vegetable peels, and garden waste in a composting bin."),
+    ELECTRONICO("Electronic devices should be taken to a specialized recycling center. Be sure to erase your personal data."),
+    ROPA("Clothes that you no longer use can be donated or taken to a textile recycling center."),
+    NEUMATICOS("Tires should be recycled at specific centers. Ask your tire supplier about recycling programs."),
+    MADERA("Untreated wood products can be recycled. Avoid including treated wood."),
+    METAL("Metals like copper and steel are recyclable. Clean any residue before taking them for recycling."),
+    BATERIAS("Batteries should be taken to specific recycling centers, as they contain heavy metals."),
+    CARTUCHOS_TONER("Return toner and ink cartridges to specific collection points for recycling."),
+    PILAS("Disposable batteries should be recycled at designated collection centers."),
+    LAMPARAS_FLUORESCENTES("Fluorescent lamps contain mercury and should be taken to a recycling center that accepts hazardous waste."),
+    CAJAS_COMIDA_POLIESTIRENO("Check with your local recycling center about the recyclability of takeout food boxes."),
+    PAPEL_ALUMINIO("Aluminum foil is recyclable if it is clean and dry."),
+    BOTELLAS_PET("PET plastic bottles are recyclable. Wash them and remove the caps before recycling."),
+    SISTEMAS_CAFE("Check if the manufacturer has a specific recycling program for coffee capsules."),
+    NO_DETERMINADO("Needs to be grouped with other materials that do not have a recommendation.");
 
     private final String descripcion;
 
