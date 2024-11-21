@@ -5,9 +5,11 @@ import model.material.TipoMaterial;
 import model.recommendation.Recomendacion;
 import model.recycling.Procedimiento;
 
+// Valid types are: battery, biological, cardboard, glass, metal, paper, plastic, trash
+
 rule "Asignar tipo - Papel"
     when
-        $material: Material(nombre == "papel", tipoNoAsignado())
+        $material: Material(nombre == "paper", tipoNoAsignado())
     then
         modify($material) {
             setTipo(TipoMaterial.PAPEL),
@@ -17,7 +19,7 @@ end
 
 rule "Asignar tipo - Cartón"
     when
-        $material: Material(nombre == "carton", tipoNoAsignado())
+        $material: Material(nombre == "cardboard", tipoNoAsignado())
     then
         modify($material) {
             setTipo(TipoMaterial.CARTON),
@@ -27,7 +29,7 @@ end
 
 rule "Asignar tipo - Plástico"
     when
-        $material: Material(nombre == "plastico", tipoNoAsignado())
+        $material: Material(nombre == "plastic", tipoNoAsignado())
     then
         modify($material) {
             setTipo(TipoMaterial.PLASTICO),
@@ -37,7 +39,7 @@ end
 
 rule "Asignar tipo - Vidrio"
     when
-        $material: Material(nombre == "vidrio", tipoNoAsignado())
+        $material: Material(nombre == "glass", tipoNoAsignado())
     then
         modify($material) {
             setTipo(TipoMaterial.VIDRIO),
@@ -57,7 +59,7 @@ end
 
 rule "Asignar tipo - Orgánico"
     when
-        $material: Material(nombre == "organico", tipoNoAsignado())
+        $material: Material(nombre == "biological", tipoNoAsignado())
     then
         modify($material) {
             setTipo(TipoMaterial.ORGANICO),
@@ -117,7 +119,7 @@ end
 
 rule "Asignar tipo - Baterías"
     when
-        $material: Material(nombre == "bateria", tipoNoAsignado())
+        $material: Material(nombre == "battery", tipoNoAsignado())
     then
         modify($material) {
             setTipo(TipoMaterial.BATERIAS),
