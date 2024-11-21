@@ -1,5 +1,6 @@
 package com.unlam.garbage.guru.recommender
 
+import com.unlam.garbage.guru.recommender.model.RecommendationResponse
 import io.ktor.http.*
 import io.ktor.serialization.gson.*
 import io.ktor.server.application.*
@@ -31,7 +32,7 @@ fun Application.module() {
         get("/recommendation") {
             val materialType = call.parameters["materialType"] ?: "UNKNOWN"
             val recommendation = getRecommendation(materialType)
-            call.respond(HttpStatusCode.OK, recommendation)
+            call.respond(HttpStatusCode.OK, RecommendationResponse(recommendation))
         }
     }
 }
